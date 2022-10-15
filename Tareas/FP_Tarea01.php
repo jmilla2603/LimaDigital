@@ -28,5 +28,3 @@ foreach($humanos as $nombre){
 	echo "</tr>";
 }
 echo "</table>";
-
- ?>
