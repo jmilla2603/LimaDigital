@@ -93,8 +93,6 @@ class Empleado
     return $descuento_afp;
   }
 
-
-
   public function getSueldoNeto(): float
   {
     $sueldo_neto = $this->getSueldoBruto() - $this->getDescSalud() - $this->getDescAFP();

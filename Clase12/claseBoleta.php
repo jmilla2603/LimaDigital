@@ -1,4 +1,4 @@
-<!-- Tarea para la casita -->
+
 <?php
 require_once("claseDocumento.php");
 
