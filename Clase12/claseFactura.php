@@ -2,27 +2,29 @@
 
 require_once "claseDocumento.php";
 
-class Factura extends Documento{
-    private string $forma_pago; 
-    private float $subtotal;
-    private float $igv;
-    private float $total;
-    private array $productos;
-    private string $table="";
-    private string $msj="";
+class Factura extends Documento
+{
+  private string $forma_pago;
+  private float $subtotal;
+  private float $igv;
+  private float $total;
+  private array $productos;
+  private string $table = "";
+  private string $msj = "";
 
-    function __construct(string $cli,string $fecha,String $ruc, string $telefono,string $fpago,float $subtotal, float $igv,float $total)
-    {
-        parent::__construct($cli,$fecha,$ruc,$telefono);
-        $this->forma_pago=$fpago;
-        $this->subtotal=$subtotal;
-        $this->igv=$igv;
-        $this->total=$total;
-    }
+  function __construct(string $cli, string $fecha, String $ruc, string $telefono, string $fpago, float $subtotal, float $igv, float $total)
+  {
+    parent::__construct($cli, $fecha, $ruc, $telefono);
+    $this->forma_pago = $fpago;
+    $this->subtotal = $subtotal;
+    $this->igv = $igv;
+    $this->total = $total;
+  }
 
-    public function ImprimirDocumento(array $productos):string{
-        
-        $this->table.="<table>
+  public function ImprimirDocumento(array $productos): string
+  {
+
+    $this->table .= "<table>
         <tr>
             <th>FACTURA: 000010</th>
         </tr>
@@ -46,26 +48,26 @@ class Factura extends Documento{
                 <th>CANTIDAD</th>
                 </tr>";
 
-                $this->productos=$productos;
+    $this->productos = $productos;
 
-                $st=0;
+    $st = 0;
 
-                $p_igv=0.18;
-                $importe_igv=0;
-                $total=0;
+    $p_igv = 0.18;
+    $importe_igv = 0;
+    $total = 0;
 
-                foreach($this->productos as $producto){
-                    $this->table.="<tr>";
-                    $st+=$producto["Precio"];
-                    foreach($producto as $valor){
-                        $this->table.="<td align='" . (is_numeric($valor)?'center':'left') . "'>{$valor}</td>";
-                    }
-                    $this->table.="</tr>";
-                }
-                
-                $importe_igv=number_format($st * $p_igv,2,".",",");
-                $total=number_format($st + $importe_igv,2,".",",");
-        $this->table.="
+    foreach ($this->productos as $producto) {
+      $this->table .= "<tr>";
+      $st += $producto["Precio"];
+      foreach ($producto as $valor) {
+        $this->table .= "<td align='" . (is_numeric($valor) ? 'center' : 'left') . "'>{$valor}</td>";
+      }
+      $this->table .= "</tr>";
+    }
+
+    $importe_igv = number_format($st * $p_igv, 2, ".", ",");
+    $total = number_format($st + $importe_igv, 2, ".", ",");
+    $this->table .= "
                 <tr>
                     <td>&nbsp;</td>
                     <td><strong>Subtotal:</strong></td>
@@ -86,16 +88,16 @@ class Factura extends Documento{
         </table>
         ";
 
-        return $this->table;
-    }
+    return $this->table;
+  }
 
-    public function getMensaje():string
-    {
-        return $this->msj;
-    }
+  public function getMensaje(): string
+  {
+    return $this->msj;
+  }
 
-    public function setMensaje(string $msj):void
-    {
-        $this->msj=$msj;
-    }
+  public function setMensaje(string $msj): void
+  {
+    $this->msj = $msj;
+  }
 }

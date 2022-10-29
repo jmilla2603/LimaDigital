@@ -16,17 +16,17 @@ class Products
         array(
           "Descripcion" => "Billetera",
           "Precio" => "15.00",
-          "Cantidad" => "2"
+          "Cantidad" => "7"
         ),
         array(
           "Descripcion" => "Mochila",
           "Precio" => "45.80",
-          "Cantidad" => "1"
+          "Cantidad" => "2"
         ),
         array(
           "Descripcion" => "Libro - PHP",
           "Precio" => "65.00",
-          "Cantidad" => "1"
+          "Cantidad" => "3"
         )
       );
   }
