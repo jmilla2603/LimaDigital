@@ -1,3 +1,15 @@
+<?php
+	session_start();
+	//session_unset();
+	//session_destroy();
+
+	if(!empty($_SESSION['PL']) || !empty($_SESSION['FP'])){
+		echo "Conteo de Perú Libre: " . $_SESSION['PL'];
+		echo "<br/>";
+		echo "Conteo de Fuerza Popular: " . $_SESSION['FP'];
+	}	
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -6,11 +18,18 @@
 		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@500&display=swap" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 	</head>
+	<script>
+		/*
+		if(window.history.replaceState){ // verificamos el estado de actualización
+			window.history.replaceState(null,null,window.location.href);
+		}
+		*/
+	</script>
 	<body>
 		<header>
 			<div class="titulo">ELECCIONES GENERALES 2021</div>
 		</header>
-		<form method="post" action="votacion.php">
+		<form method="post" action="conteo.php">
 		<section>
 		
 		  <div class="contenedor">
