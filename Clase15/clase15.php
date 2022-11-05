@@ -1,5 +1,5 @@
 <?php
-
+	date_default_timezone_set('America/Lima');
 	// file_exists => función que comprobar si un 
 	// archivo o carpeta existe en una dirección
 	// especifica.
@@ -26,4 +26,28 @@
 	" . $ruta_archivo;
 	else
 		echo "No se encontro el archivo carrito.";
+
+	echo "<br/>";
+
+	echo "El " . esEjecutable($archivo);
+
+	echo "<br/>";
+
+	echo "UltimaModificacion: " . ultimaModificacion($archivo);
+
+	function esEjecutable($archivo){
+		if(is_executable($archivo)){
+			return 'Archivo ejecutable';
+		}else{
+			return 'Archivo no ejecutable';
+		}
+	}	
+
+	function ultimaModificacion($archivo){
+		if(file_exists($archivo)){
+			return date("F d Y H:i:s.",filectime($archivo));
+		}else{
+			return '';
+		}
+	}
 ?>

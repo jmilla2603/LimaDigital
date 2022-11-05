@@ -22,7 +22,6 @@
 	
 	print_r($lista_productos);
 	
-	
 	function listar($archivo){
 		$abrir=fopen($archivo,'r');
 		while(($producto=fgets($abrir,filesize($archivo)))!==false){
