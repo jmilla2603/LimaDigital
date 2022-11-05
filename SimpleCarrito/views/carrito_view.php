@@ -38,53 +38,52 @@
                 <div class="col-xl-4 bg-light" id="load_wrapper">
                     <h1>Carrito</h1>
                     <!-- Cart content -->
-                    <div id="cart_wrapper">
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table table-hover table-striped table-sm">
-                            <thead>
-                                <tr>
-                                    <th>Producto</th>
-                                    <th class="text-center">Cantidad</th>
-                                    <th class="text-center">Total</th>
-                                    <th class="text-center">&nbsp;</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="align-middle">
-                                        Producto
-                                        <small class="d-block text-muted">CODIGO 123456789</small>
-                                    </td>
-                                    <td class="align-middle text-center" width="5%">
-                                        <input type="number" class="form-control" min="1" max="50" value="1">
-                                    </td>
-                                    <td class="align-middle text-center">S/ 150.00</td>
-                                    <td class="text-right align-middle"><i class="fas fa-times text-danger"></i></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <button class="btn btn-sm btn-danger mb-3">Vaciar carrito</button>
+                    <div id="cart_content">
+                    	<div class="table-responsive">
+							<table class="table table-hover table-striped table-sm">
+								<thead>
+									<tr>
+										<th>Producto</th>
+										<th class="text-center">Cantidad</th>
+										<th class="text-center">Total</th>
+										<th class="text-center">&nbsp;</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="align-middle">
+											Producto
+											<small class="d-block text-muted">CODIGO 123456789</small>
+										</td>
+										<td class="align-middle text-center" width="5%">
+											<input type="number" class="form-control" min="1" max="50" value="1">
+										</td>
+										<td class="align-middle text-center">S/ 150.00</td>
+										<td class="text-right align-middle"><i class="fas fa-times text-danger"></i></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<button class="btn btn-sm btn-danger mb-3">Vaciar carrito</button>
 
-                    <!-- Totales -->
-                    <table class="table">
-                        <tr>
-                            <td>SUBTOTAL</td>
-                            <td class="text-success text-right">S/ 150.00</td>
-                        </tr>
-                        <tr>
-                            <td>I.G.V.</td>
-                            <td class="text-success text-right">S/ 27.00</td>
-                        </tr>
-                        <tr>
-                            <td>TOTAL</td>
-                            <td class="text-success text-right"><h3>S/ 177.00</h3></td>
-                        </tr>
-                    </table>
-                    <!-- Fin Totales -->
-                    <button class="btn btn-success btn-sm btn-block">PAGAR AHORA</button>
-
+						<!-- Totales -->
+						<table class="table">
+							<tr>
+								<td>SUBTOTAL</td>
+								<td class="text-success text-right">S/ 150.00</td>
+							</tr>
+							<tr>
+								<td>I.G.V.</td>
+								<td class="text-success text-right">S/ 27.00</td>
+							</tr>
+							<tr>
+								<td>TOTAL</td>
+								<td class="text-success text-right"><h3>S/ 177.00</h3></td>
+							</tr>
+						</table>
+						<!-- Fin Totales -->
+						<button class="btn btn-success btn-sm btn-block">PAGAR AHORA</button>
+					</div>
                 </div>
             </div>
         </div>
