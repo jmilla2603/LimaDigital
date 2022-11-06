@@ -1,7 +1,6 @@
 <footer class="footer mt-auto py-3">
     <div class="container">
-        <span class="text-muted">@copyright 2022 JCM - <a
-                href="mailto:jmilla2603@gmail.com">jmilla2603@gmail.com</a>.</span>
+        <span class="text-muted">@copyright 2022 JCM - <a href="mailto:jmilla2603@gmail.com">jmilla2603@gmail.com</a>.</span>
     </div>
 </footer>
 <!-- JavaScript Bundle with Popper -->
@@ -16,9 +15,9 @@
 <script src="assets/plugins/waitMe/waitMe.min.js"></script>
 
 <script>
-$(function() {
-    $('[data-toggle="tooltip"]').tooltip()
-});
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
 </script>
 <script src="assets/js/main.js"></script>
 </body>

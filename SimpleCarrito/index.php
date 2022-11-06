@@ -2,20 +2,14 @@
 
 error_reporting(E_ALL);
 
-    require_once "app/config.php";
-    
-    require_once "models/products.php";
+require_once "app/config.php";
 
-    $productos=new Products;
+require_once "models/products.php";
 
-    $lista_productos=$productos->ListaProductos();
+$productos = new Products;
 
-    //$productos->infoData($lista_productos);
+$lista_productos = $productos->ListaProductos();
 
-    require_once "views/carrito_view.php";
+//$productos->infoData($lista_productos);
 
-?>
-
-
-
-    
+require_once "views/carrito_view.php";
