@@ -90,4 +90,4 @@
         <!-- END Content -->
     </main>
 
-<?php require_once 'includes/inc_footer.php' ?>
+	<?php require_once 'includes/inc_footer.php' ?>
