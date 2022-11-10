@@ -1,3 +1,5 @@
 # Lima Digital
-Curso - PHP
-> Aquí encontraras los archivos que se van desarrollando en la capacitación del curso PHP-MySql, entorno al desarrollo de aplicaciones web con el patrón de diseño MCV.
+
+Curso - PHP - Benjamin Pablo
+
+> Aquí encontraras todas las tareas que se desarrollarán en las clases con el Ing. Juan Carlos Milla.
