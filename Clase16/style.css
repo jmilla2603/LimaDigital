@@ -1,0 +1,45 @@
+body {
+  max-width: 1536px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100vh;
+  padding: 1rem 3rem;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article img {
+  height: 300px;
+}
+
+.section {
+  display: flex;
+  max-width: 100%;
+  gap: 5rem;
+}
+
+.partido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  width: 30px;
+  height: 30px;
+}

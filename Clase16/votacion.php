@@ -26,11 +26,11 @@ session_destroy();
 		<div class="titulo">ELECCIONES GENERALES 2021</div>
 	</header>
 	<form method="post" action="conteo.php">
-		<section>
+		<section class="section">
 
 			<div class="contenedor">
 				<div class="partido">
-					<img src="candidatos/2218.jpg">
+					<img class="img" src="candidatos/2218.jpg">
 					<span>PERU LIBRE</span>
 				</div>
 				<article>
@@ -42,7 +42,7 @@ session_destroy();
 			</div>
 			<div class="contenedor">
 				<div class="partido">
-					<img src="candidatos/1366.jpg">
+					<img class="img" src="candidatos/1366.jpg">
 					<span>FUERZA POPULAR</span>
 				</div>
 				<article>
