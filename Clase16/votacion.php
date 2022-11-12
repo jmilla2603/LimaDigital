@@ -1,14 +1,16 @@
 <?php
 session_start();
 
-if (!empty($_SESSION['PL']) || !empty($_SESSION['FP'])) {
-	echo "Conteo de Perú Libre: " . $_SESSION['PL'];
+if (!empty($_SESSION['PL']) || !empty($_SESSION['FP']) || !empty($_SESSION['total']) || !empty($_SESSION['PL%']) || !empty($_SESSION['FP%'])) {
+	echo "Conteo de Perú Libre: " . $_SESSION['PL'] . " " .  $_SESSION['PL%'] . "%";
 	echo "<br/>";
-	echo "Conteo de Fuerza Popular: " . $_SESSION['FP'];
+	echo "Conteo de Fuerza Popular: " . $_SESSION['FP'] . " " .  $_SESSION['FP%'] . "%";
+	echo "<br/>";
+	echo "Total de votos: " . $_SESSION['total'] . " 100%";
 }
 
-session_unset();
-session_destroy();
+// session_unset();
+// session_destroy();
 ?>
 
 <!DOCTYPE html>
