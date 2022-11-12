@@ -10,13 +10,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@500&display=swap" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 </head>
-<script>
-	/*
-		if(window.history.replaceState){ // verificamos el estado de actualización
-			window.history.replaceState(null,null,window.location.href);
-		}
-		*/
-</script>
 
 <body>
 	<header>
