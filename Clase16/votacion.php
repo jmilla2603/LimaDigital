@@ -1,4 +1,14 @@
 <?php
+session_start();
+
+if (!empty($_SESSION['PL']) || !empty($_SESSION['FP'])) {
+	echo "Conteo de Perú Libre: " . $_SESSION['PL'];
+	echo "<br/>";
+	echo "Conteo de Fuerza Popular: " . $_SESSION['FP'];
+}
+
+session_unset();
+session_destroy();
 ?>
 
 <!DOCTYPE html>
