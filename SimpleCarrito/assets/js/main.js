@@ -11,7 +11,7 @@ $(document).ready(function(){
                 contenido.waitMe({effect:'facebook',text:'Cargando...'});
             }
         }).done(function(resp){
-            contenido.html(resp.data);
+            //contenido.html(resp.data);
             //console.log(resp);
         }).fail(function(jsXHR,textStatus,errorThrown){
             if(jsXHR.status===0){

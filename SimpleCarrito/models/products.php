@@ -14,7 +14,7 @@
             print_r($elementos);
             echo "</pre>";
         }
-
+        
         public function ListaProductos():array{
             $this->lista_productos=array(array(
                 'codigo' => '7613035724518',
