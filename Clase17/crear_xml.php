@@ -1,8 +1,8 @@
 <?php
 
     $doc=new DOMDocument();
-    $doc->formatOutput=FALSE;
-    $doc->preserveWhiteSpace=TRUE;
+    $doc->formatOutput=TRUE;
+    $doc->preserveWhiteSpace=FALSE;
     $doc->encoding='utf-8';
 
     // EMPieza la creacion del XML
