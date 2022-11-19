@@ -10,7 +10,7 @@
 			<div class="col-xl-8">
 				<h1>Productos</h1>
 				<div class="row">
-					<?php foreach ($lista_productos as $elementos) : ?>
+					<?php foreach ($data as $elementos) : ?>
 						<div class="col-md-4 col-xs-6 col-xl-3 mb-4">
 							<div class="card w-80">
 								<img src="assets/images/productos/<?php echo $elementos['imagen']; ?>" alt="<?php echo $elementos['imagen']; ?>" class="card-img-top">

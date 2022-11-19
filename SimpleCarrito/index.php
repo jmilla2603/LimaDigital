@@ -3,13 +3,18 @@
 error_reporting(E_ALL);
 
 require_once "app/config.php";
+require_once "controllers/productoController.php";
 
-require_once "models/products.php";
+$datos = [
+  "titulo" => ".:: Lima Digital - Carrito Online",
+  "lista_productos" => $productos->getProductos()
+];
 
-$productos = new Products;
+$productos = new productoController();
+$lista_productos = $productos->getProductos();
 
-$lista_productos = $productos->ListaProductos();
+$buscar_producto = $productos->searchProduct(7613035724518);
 
-//$productos->infoData($lista_productos);
 
-require_once "views/carrito_view.php";
+
+render_view("carrito_view", $lista_productos);
