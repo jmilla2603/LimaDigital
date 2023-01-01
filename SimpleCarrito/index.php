@@ -15,6 +15,4 @@ $lista_productos = $productos->getProductos();
 
 $buscar_producto = $productos->searchProduct(7613035724518);
 
-
-
 render_view("carrito_view", $lista_productos);
